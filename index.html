@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html land="es">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
+ <meta charset="utf-8" />
+ <title>Drag & drop</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="JavaScript/movimiento_cel.js"></script>
+  <link rel="stylesheet" type="text/css" href="scss/DragAndDrop.css">
+  <script type="text/javascript" src="JavaScript/Mov_DragAndDrop.js"></script>
+
+ 
 </head>
 <body>
-
-<div class="container-fluid">
-  
-  <div class="row">
-    <div class="col-sm-12" style="background-color:yellow;">
+ <section>
+   <div class="carrusel" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+      <div class="col-sm-12" style="background-color:yellow;">
       <br>
       <br>
       <div class="col-sm-12" style="background-color:transparent;">
@@ -24,12 +25,12 @@
       <div class="indicator"></div>
       <div class="wrap">
       <ul>
-      <li><img src="marcas/logo-lanix.png"/></li>
-      <li><img src="marcas/Logo-Moto.png"/></li>
-      <li><img src="marcas/logo-sony.png"/></li>
-      <li><img src="marcas/logo-Sam.png"/></li>
-      <li><img src="marcas/logo-xiaomi.png"/></li>
-      <li><img src="marcas/logo-huawei.png"/></li>
+      <li><img id="cel1" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-lanix.png"/></li>
+      <li><img id="cel2" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/Logo-Moto.png"/></li>
+      <li><img id="cel3" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-sony.png"/></li>
+      <li><img id="cel4" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-Sam.png"/></li>
+      <li><img id="cel5" alt="pieza5" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-xiaomi.png"/></li>
+      <li><img id="cel6" alt="pieza6" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-huawei.png"/></li>
 >>>>>>> 5933f1368a80b3e79549102888270f7aa424f25b
       
       </ul>
@@ -40,208 +41,34 @@
       <br>
       
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="col-sm-3" style="background-color:green;">
 
-      ****Area celular 1**
+      <br>
+      <br>
+      <br>
+      <br>
       
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="col-sm-12" style="background-color:red;">
 
-      ****Area colores**
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      </div>
-      <br>
-      <br><br>
-      <br><br>
-      
-      </div>
+</div>
+   </div>
+ </section>
 
-       <div class="col-sm-2" style="background-color:orange;">
-      <br>
-      ****Area informacion1**
-      
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      </div>
-       <div class="col-sm-2" style="background-color:blue;">
-      <br>
-      ****Area botones**
-      
-      <br>
-      <div class="col-sm-5" style="background-color:white;">
-        audio
-      <br>
-      <br>
-      </div>
-      
-      <div class="col-sm-5" style="background-color:black;">
-        audio
-      <br>
-      <br>
-      </div>
-       <br>
-      <div class="col-sm-5" style="background-color:black;">
-        audio
-      <br>
-      <br>
-      </div>
-      
-      <div class="col-sm-5" style="background-color:white;">
-        audio
-      <br>
-      <br>
-      </div>
-      <br>
-      <br>
-       <br>
-      <div class="col-sm-5" style="background-color:white;">
-        audio
-      <br>
-      <br>
-      </div>
-      
-      <div class="col-sm-5" style="background-color:black;">
-        audio
-      <br>
-      <br>
-      </div>
-      <br>
-      <br>
-      <br>
-      
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      </div>
-      <div class="col-sm-2" style="background-color:orange;">
-      <br>
-      ****Area informacion 2**
-      
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      </div>
+ <section>
+  <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
 
-        <div class="col-sm-3" style="background-color:green;">
-
-      ****Area celular 2**
-      
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="col-sm-12" style="background-color:red;">
-
-      ****Area colores**
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
-      <br>
-      <br><br>
-      <br><br>
-      
-      </div>
-       
-    </div>
-    
-
+  
+   <div class="cuadradito" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+    2
+   </div>
+  </div>
+  <div id="cuadro2">
+  </div>
+  <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
+   Clonadora
+  </div>
+  <!--<div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">Papelera</div>-->
+ </section>
+</body>
+ </section>
 </body>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script  src="JavaScript/index.js"></script>
