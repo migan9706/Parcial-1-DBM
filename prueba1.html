@@ -4,67 +4,72 @@
 <head>
  <meta charset="utf-8" />
  <title>Drag & drop</title>
-
-  <link rel="stylesheet" type="text/css" href="CSS/DragAndDrop.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="scss/DragAndDrop.css">
   <script type="text/javascript" src="JavaScript/Mov_DragAndDrop.js"></script>
 
  
 </head>
 <body>
- <header>
-  <h1> Un ejemplo del uso de Drag & Drop en HTML5 </h1>
- </header>
+ <section>
+   <div class="carrusel" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+      <div class="col-sm-12" style="background-color:yellow;">
+      <br>
+      <br>
+      <div class="col-sm-12" style="background-color:transparent;">
+      <div class="carousel right">
+      <div class="indicator"></div>
+      <div class="wrap">
+      <ul>
+      <li><img id="cel1" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-lanix.png"/></li>
+      <li><img id="cel2" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/Logo-Moto.png"/></li>
+      <li><img id="cel3" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-sony.png"/></li>
+      <li><img id="cel4" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-Sam.png"/></li>
+      <li><img id="cel5" alt="pieza5" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-xiaomi.png"/></li>
+      <li><img id="cel6" alt="pieza6" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-huawei.png"/></li>
+>>>>>>> 5933f1368a80b3e79549102888270f7aa424f25b
+      
+      </ul>
+      </div>
+      </div>
+  
+      <br>
+      <br>
+      
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      
+
+</div>
+   </div>
+ </section>
 
  <section>
-  <div id="cuadro1" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+  <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
 
-   <div class="cuadradito" id="arrastrable1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    1
-   </div>   
+  
    <div class="cuadradito" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
     2
    </div>
-   <div class="cuadradito" id="arrastrable3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    3
-   </div>
   </div>
-  <div id="cuadro2" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+  <div id="cuadro2">
   </div>
   <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
    Clonadora
   </div>
-  <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">Papelera</div>
+  <!--<div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">Papelera</div>-->
  </section>
- <section>
-   <body onload="comprobarnavegador();">
-    <header>
-        <h1> Un puzzle de cuatro piezas </h1>
-    </header>
-
-    <section id="contenedorPuzzle">
-        <div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
-            <img id="pieza3" src="celulares/cel1-sony.png" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)" > 
-            <!--<img id="pieza3" src="https://1.bp.blogspot.com/-8LurPyhzlD4/USVEdAH-KJI/AAAAAAAAA54/INQRSWmH79k/s320/pieza3.jpg" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">-->
-            <img id="pieza2" src="https://1.bp.blogspot.com/-daD5d1V4ct4/USVEdAGqdDI/AAAAAAAAA50/XXo8rBlTGpQ/s320/pieza2.jpg" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-            <img id="pieza4" src="https://4.bp.blogspot.com/-2R3yc2Kggvo/USVEd9UUR5I/AAAAAAAAA6A/YBxpgYG15NI/s320/pieza4.jpg" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-            <img id="pieza1" src="https://3.bp.blogspot.com/-gA3KvKhA-8w/USVEdAiWi6I/AAAAAAAAA58/btNKJqIkXHc/s320/pieza1.jpg" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-        </div>
-        <div id="puzzle">
-            <div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-            <div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-            <div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-            <div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-        </div>  
-    </section>
-     <section id="contenedorPuzzle">
-        <div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
-            <img id="pieza1" src=celulares/cel1-sony.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-        </div>
-        <div id="puzzle">
-            <div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
-        </div>  
-    </section>
 </body>
  </section>
 </body>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="JavaScript/index.js"></script>
 </html>
