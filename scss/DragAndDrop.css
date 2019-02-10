@@ -74,13 +74,18 @@ section{
 }
 #cuadro2{
     float: left;
-    width: 50%;
+    width: 25%;
+    height: 400px;
+}
+#opciones{
+    float: left;
+    width: 10%;
     height: 400px;
 }
 
 #cuadro1, #cuadro3, #papelera {
     float: left;
-    width: 25%;
+    width: 20%;
     height: 400px;
 }
 
