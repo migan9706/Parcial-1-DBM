@@ -60,6 +60,7 @@ h1 {
 }
 section{
     background: #292B2C;
+    width: auto;
 }
 #carrusel{
     float: left;
@@ -71,10 +72,15 @@ section{
     
     background: #292B2C;
 }
-
-#cuadro1, #cuadro2, #cuadro3, #papelera {
+#cuadro2{
     float: left;
-    width: 425px;
+    width: 50%;
+    height: 400px;
+}
+
+#cuadro1, #cuadro3, #papelera {
+    float: left;
+    width: 25%;
     height: 400px;
 }
 
