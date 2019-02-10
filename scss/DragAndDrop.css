@@ -106,16 +106,28 @@ section{
     background: #5ff;
 }
 
-.cuadradito {
+.colorCel1 {
 
     background: #288;
     border: 2px solid #882;
-    width: 5px;
+    width: 10%;
     height: 5px;
     padding: 0 10px 15px;
     margin: 5px;
     top: 650px;
-    left: 50px;
+    left: 4%;
+    position: absolute;
+}
+.colorCel2 {
+
+    background: #288;
+    border: 2px solid #882;
+    width: 10%;
+    height: 5px;
+    padding: 0 10px 15px;
+    margin: 5px;
+    top: 650px;
+    right: 4%;
     position: absolute;
 }
 
