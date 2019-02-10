@@ -62,6 +62,10 @@ section{
     background: #292B2C;
     width: auto;
 }
+button{
+    margin: 10px;
+    align-content: center;
+}
 #carrusel{
     float: left;
     width: auto;
