@@ -76,7 +76,12 @@ button{
     
     background: #292B2C;
 }
-#cuadro2{
+#cuadro2-1{
+    float: left;
+    width: 25%;
+    height: 400px;
+}
+#cuadro2-2{
     float: left;
     width: 25%;
     height: 400px;
@@ -97,10 +102,13 @@ button{
     background: #55f;
 }
 
-#cuadro2 {
-    background: #5f5;
+#cuadro2-2{
+    background-color: blue;
 }
 
+#cuadro2-1{
+    background-color: blue;
+}
 #cuadro3 {
     background: #f55;
 

@@ -11,6 +11,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="scss/DragAndDrop.css">
   <script type="text/javascript" src="JavaScript/Mov_DragAndDrop.js"></script>
+  <script type="text/javascript" src="JavaScript/EventoCaract.js"></script>
+    <script type="text/javascript" src="JavaScript/claseMarcaYCelular.js"></script>
 
  
 </head>
@@ -60,21 +62,20 @@
     Espacio colores
    </div>
   </div>
-  <div id="cuadro2">
+  <div id="cuadro2-1" style="background-color: #FBB678">
   </div>
   <div id="opciones">
     <ul>
-      <li><button>Menus</button></li>
-      <li><button>Menus</button></li>
-      <li><button>Menus</button></li>
-      <li><button>Menus</button></li>
-      <li><button>Menus</button></li>
-      <li><button>Menus</button></li>
-      <li><button>Menus</button></li>
-      <li><button>Menus</button></li>
+    <center>
+      <li><button onclick="cargarinfo1()" ondblclick="oc()">Red</button></li>
+      <li><button onclick="cargarinfo2()" ondblclick="oc()">Memoria</button></li>
+      <li><button onclick="cargarinfo3()" ondblclick="oc()">Almacenamiento</button></li>
+      <li><button onclick="cargarinfo4()" ondblclick="oc()">Cámara</button></li>
+      <li><button onclick="cargarinfo5()" ondblclick="oc()">Peso</button></li>
+     </center>	 
     </ul>
   </div>
-  <div id="cuadro2">
+  <div id="cuadro2-2" style="background-color: #FBB678">
   </div>
   <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
    <h1>
@@ -82,6 +83,8 @@
    </h1>
    <div class="colorCel2" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
     Espacio colores
+
+    
    </div>
   </div>
   <!--<div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">Papelera</div>-->
