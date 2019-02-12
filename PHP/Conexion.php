@@ -1,5 +1,5 @@
 <?php
-	$hostname="localhost:8080";
+	$hostname="localhost";
 	$database="mesainteractiva";
 	$username="root";
 	$password="";
