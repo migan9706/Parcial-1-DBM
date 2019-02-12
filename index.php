@@ -30,12 +30,12 @@ session_start();
       <div class="indicator"></div>
       <div class="wrap">
       <ul>
-      <li><img id="cel1" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event) ="" src="marcas/logo-lanix.png"/></li>
-      <li><img id="cel2" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/Logo-Moto.png"/></li>
-      <li><img id="cel3" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-sony.png"/></li>
-      <li><img id="cel4" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-Sam.png"/></li>
-      <li><img id="cel5" alt="pieza5" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-xiaomi.png"/></li>
-      <li><img id="cel6" alt="pieza6" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="marcas/logo-huawei.png"/></li>
+      <li><img id="cel1" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-lanix.jpg"/></li>
+      <li><img id="cel2" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-moto.jpg"/></li>
+      <li><img id="cel3" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-sony.jpg"/></li>
+      <li><img id="cel4" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-sam.jpg"/></li>
+      <li><img id="cel5" alt="pieza5" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-xiaomi.jpg"/></li>
+      <li><img id="cel6" alt="pieza6" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-huawei.jpg"/></li>
 >>>>>>> 5933f1368a80b3e79549102888270f7aa424f25b
       
       </ul>
