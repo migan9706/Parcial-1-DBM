@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-02-2019 a las 22:19:48
+-- Tiempo de generación: 12-02-2019 a las 22:36:18
 -- Versión del servidor: 10.1.9-MariaDB
 -- Versión de PHP: 5.6.15
 
@@ -156,18 +156,19 @@ INSERT INTO `marcas` (`idmarcas`, `nombre`, `url`, `ventana_idventana`) VALUES
 --
 
 CREATE TABLE `ventana` (
-  `idventana` int(11) NOT NULL
+  `idventana` int(11) NOT NULL,
+  `estado` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `ventana`
 --
 
-INSERT INTO `ventana` (`idventana`) VALUES
-(1),
-(2),
-(3),
-(4);
+INSERT INTO `ventana` (`idventana`, `estado`) VALUES
+(1, 0),
+(2, 0),
+(3, 0),
+(4, 0);
 
 --
 -- Índices para tablas volcadas
