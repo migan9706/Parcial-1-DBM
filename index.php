@@ -1,5 +1,8 @@
 <?php
 session_start();
+require_once('PHP/Conexion.php');
+//$conexion = 
+$_SESSION["ventana"] = "1";
 ?>
 <!DOCTYPE html>
 
