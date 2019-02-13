@@ -103,6 +103,8 @@ contador = 0; // Variable global para tener poder poner un id unico a cada eleme
             elementoClonado.id = "ElemClonado" + contador; // Se cambia el id porque tiene que ser unico
             contador += 1;  
             elementoClonado.style.position = "static";  // Se posiciona de forma "normal" (Sino habria que cambiar las coordenadas de la posición)  
+            elementoClonado.style.width = "200px";
+            elementoClonado.style.height = "auto";
             e.target.appendChild(elementoClonado); // Se añade el elemento clonado
             e.target.style.border = '';   // Quita el borde del "cuadro clonador"
         }
