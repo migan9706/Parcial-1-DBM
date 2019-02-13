@@ -1,0 +1,158 @@
+/*body{
+  background: #303030;
+}
+h1 {
+  color: #CA7218;
+  text-align: center;
+}
+
+/* Contenedor del puzzle*/
+/*
+#contenedorPuzzle {
+    margin: 20px auto;
+    width: 450px;
+    background: rgba(20,20,20,0.8);
+    box-shadow: 0px 0px 10px  2px #777;
+    color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Puzzle */
+/*
+#contenedorPiezas{
+    background: #e7931a;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 10px;
+    box-shadow: 0px 0px 10px  2px #d0eb6a;
+}
+
+#puzzle {
+    background: #d0eb6a;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px  2px #e7931a;
+}
+.contenedorPieza {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#contenedorPuzzle img {
+    float: left;
+    padding: 1px;
+    width: 98px;
+    height: 98px;
+}*/
+body{
+  background: #292B2C;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+section{
+    background: #292B2C;
+    width: auto;
+}
+button{
+    margin: 10px;
+    align-content: center;
+}
+#carrusel{
+    float: left;
+    width: auto;
+    /*width: 1300px;
+    margin: 10px;*/
+    height: 300px;
+    padding: 10px;
+    
+    background: #292B2C;
+}
+#cuadro2-1{
+    float: left;
+    width: 25%;
+    height: 400px;
+}
+#cuadro2-2{
+    float: left;
+    width: 25%;
+    height: 400px;
+}
+#opciones{
+    float: left;
+    width: 10%;
+    height: 400px;
+}
+
+#cuadro1, #cuadro3, #papelera {
+    float: left;
+    width: 20%;
+    height: 400px;
+}
+
+#cuadro1{
+    background: #55f;
+}
+
+#cuadro2-2{
+    background-color: blue;
+}
+
+#cuadro2-1{
+    background-color: blue;
+}
+#cuadro3 {
+    background: #f55;
+
+}
+
+#papelera {
+    background: #5ff;
+}
+
+.colorCel1 {
+
+    background: #288;
+    border: 2px solid #882;
+    width: 10%;
+    height: 5px;
+    padding: 0 10px 15px;
+    margin: 5px;
+    top: 650px;
+    left: 4%;
+    position: absolute;
+}
+.colorCel2 {
+
+    background: #288;
+    border: 2px solid #882;
+    width: 10%;
+    height: 5px;
+    padding: 0 10px 15px;
+    margin: 5px;
+    top: 650px;
+    right: 4%;
+    position: absolute;
+}
+
+#arrastrable1 {
+    background: #228;
+    border: 2px solid #822;
+}
+
+#arrastrable2 {
+    background: #282;
+    border: 2px solid #228;
+}
+
+#arrastrable3 {
+    background: #822;
+    border: 2px solid #282;
