@@ -19,6 +19,7 @@ $_SESSION["ventana"] = "1";
   <script type="text/javascript" src="JavaScript/Mov_DragAndDrop.js"></script>
   <script type="text/javascript" src="JavaScript/EventoCaract.js"></script>
     <script type="text/javascript" src="JavaScript/claseMarcaYCelular.js"></script>
+    <script type="text/javascript" src="JavaScript/carrusel.js"></script>
 
  
 </head>
@@ -32,14 +33,10 @@ $_SESSION["ventana"] = "1";
       <div class="carousel right">
       <div class="indicator"></div>
       <div class="wrap">
-      <ul>
-      <li><img id="cel1" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-lanix.jpg"/></li>
-      <li><img id="cel2" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-moto.jpg"/></li>
-      <li><img id="cel3" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-sony.jpg"/></li>
-      <li><img id="cel4" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-sam.jpg"/></li>
-      <li><img id="cel5" alt="pieza5" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-xiaomi.jpg"/></li>
-      <li><img id="cel6" alt="pieza6" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="Imagenes/Marcas/logo-huawei.jpg"/></li>
->>>>>>> 5933f1368a80b3e79549102888270f7aa424f25b
+      <button style="width:100%; height:50px; font-size: 30px;" onclick="obtener_registros()">Home</button>
+      <ul id="carrusel" style="height: 130px; width: 100px">
+      
+      
       
       </ul>
       </div>
