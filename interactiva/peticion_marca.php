@@ -30,7 +30,7 @@
 					while($filaMarcas1= $realizando1->fetch_assoc())
 					{
 						$resultado.=
-						' <li><img id="'.$filaMarcas1["idmarcas"].'" alt="'.$filaMarcas1["nombre"].'" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="'.$filaMarcas1["url"].'"/></li>'
+						' <li><img id="'.$filaMarcas1["idmarcas"].'" alt="'.$filaMarcas1["nombre"].'"  src="'.$filaMarcas1["url"].'"/></li>'
 							;
 								
 					}
