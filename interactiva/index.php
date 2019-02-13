@@ -34,7 +34,7 @@ $_SESSION["ventana"] = "1";
       <div class="indicator"></div>
       <div class="wrap">
       <button style="width:100%; height:50px; font-size: 30px;" onclick="obtener_registros()">Home</button>
-      <ul id="carrusel">
+      <ul id="carrusel" style="height: 130px; width: 100px">
       
       
       
