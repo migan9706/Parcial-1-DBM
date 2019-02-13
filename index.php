@@ -14,6 +14,7 @@ $_SESSION["ventana"] = "1";
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="scss/DragAndDrop.css">
   <script type="text/javascript" src="JavaScript/Mov_DragAndDrop.js"></script>
@@ -26,41 +27,41 @@ $_SESSION["ventana"] = "1";
 <body>
  <section>
    <div class="carrusel" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
-      <div class="col-sm-12" style="background-color:yellow;">
-      <br>
-      <br>
-      <div class="col-sm-12" style="background-color:transparent;">
-      <div class="carousel right">
-      <div class="indicator"></div>
-      <div class="wrap">
-      <button style="width:100%; height:50px; font-size: 30px;" onclick="obtener_registros()">Home</button>
-      <ul id="carrusel" style="height: 130px; width: 100px">
-      
-      
-      
-      </ul>
-      </div>
-      </div>
-  
-      <br>
-      <br>
-      
-      </div>
+      <div class="col-sm-12 exterior-carrusel">
+         
+          <div class="col-sm-12" style="background-color:transparent;">
+                       <div id="botones">
+                          <button id="atras" name="atras" class="atras" style="visibility:hidden;" onclick="obtener_registros()"><i class="fas fa-undo"></i></button>
+                      </div> 
+                      <div class="carousel right">
 
-      <br>
-      <br>
-      <br>
-      <br>
-      
+                            <div class="indicator">
+                              
+                            </div>
 
-</div>
-   </div>
+                            <div class="wrap">
+                              
+                                <ul id="carrusel" >
+                                                                                                                        
+                                </ul>
+                                
+                            </div>
+
+                      </div>
+             
+                  <br>
+                  <br>
+      
+           </div>
+      
+      </div>
+  </div>
  </section>
 
  <section>
   <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
     <h1>Arrastre aqui</h1>
-  
+     <img class="silueta_celular" src="Imagenes/Celulares/silueta_celular.jpg">  
    <div class="colorCel1" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
     Espacio colores
    </div>
@@ -84,6 +85,7 @@ $_SESSION["ventana"] = "1";
    <h1>
      Arrastre Aqui
    </h1>
+   <img class="silueta_celular" src="Imagenes/Celulares/silueta_celular.jpg">
    <div class="colorCel2" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
     Espacio colores
 
