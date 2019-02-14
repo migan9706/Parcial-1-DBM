@@ -1,4 +1,4 @@
-contador = 0; // Variable global para tener poder poner un id unico a cada elemento cuando se clona.
+contador = 1; // Variable global para tener poder poner un id unico a cada elemento cuando se clona.
         function start(e) {
             e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
             e.dataTransfer.setData("Data", e.target.id); // Coje el elemento que se va a mover
@@ -100,11 +100,11 @@ contador = 0; // Variable global para tener poder poner un id unico a cada eleme
             elementoArrastrado.style.opacity = ''; // Dejamos la opacidad a su estado anterior para copiar el elemento igual que era antes
 
             var elementoClonado = elementoArrastrado.cloneNode(true); // Se clona el elemento
-            elementoClonado.id = "ElemClonado" + contador; // Se cambia el id porque tiene que ser unico
+            elementoClonado.id = "Cel" + contador; // Se cambia el id porque tiene que ser unico
             contador += 1;  
             elementoClonado.style.position = "static";  // Se posiciona de forma "normal" (Sino habria que cambiar las coordenadas de la posición)  
-            elementoClonado.style.width = "200px";
-            elementoClonado.style.height = "auto";
+            elementoClonado.style.width = "15%";
+            elementoClonado.style.height = "15%";
             e.target.appendChild(elementoClonado); // Se añade el elemento clonado
             e.target.style.border = '';   // Quita el borde del "cuadro clonador"
         }
