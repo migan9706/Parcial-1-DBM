@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 require_once('PHP/Conexion.php');
 //$conexion = 
@@ -72,7 +72,7 @@ $_SESSION["ventana"] = "1";
     <center>
       <li><button onclick="cargarinfo1()" ondblclick="oc()"><img src="Imagenes/icono/red.png" alt="x" />   Red</button></li>
       <li><button onclick="cargarinfo2()" ondblclick="oc()"><img src="Imagenes/icono/memoria.png" alt="x" />   Memoria</button></li>
-      <li><button onclick="cargarinfo3()" ondblclick="oc()"><img src="Imagenes/icono/almacenamiento.png" alt="x" />Almacenamiento</button></li>
+      <li><button onclick="cargarinfo3()" ondblclick="oc()"><img src="Imagenes/icono/almacenamiento.png" alt="x" /> tarjeta de memoria</button></li>
       <li><button onclick="cargarinfo4()" ondblclick="oc()"><img src="Imagenes/icono/camara.png" alt="x" />  Cámara</button></li>
       <li><button onclick="cargarinfo5()" ondblclick="oc()"><img src="Imagenes/icono/peso.png" alt="x" />  Peso</button></li>
      </center>	 
