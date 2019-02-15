@@ -20,6 +20,7 @@ $_SESSION["ventana"] = "1";
   <script type="text/javascript" src="JavaScript/EventoCaract.js"></script>
     <script type="text/javascript" src="JavaScript/claseMarcaYCelular.js"></script>
     <script type="text/javascript" src="JavaScript/carrusel.js"></script>
+    <script type="text/javascript" src="JavaScript/Display.js"></script>
 
  
 </head>
@@ -80,6 +81,7 @@ $_SESSION["ventana"] = "1";
  <section>
   <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
     <h1>Arrastre aqui</h1>
+   
   
    <div class="colorCel1" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
     Espacio colores

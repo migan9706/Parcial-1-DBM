@@ -14,7 +14,7 @@
 					while($filaMarcas= $realizando->fetch_assoc())
 					{
 						$resultado.=
-						'<li><img id="'.$filaMarcas["idcelulares"].'" alt="'.$filaMarcas["nombre"].'" draggable="true" ondragstart="start(event)" ondragend="end(event)" src="'.$filaMarcas["url"].'"/></li>'
+						'<li ><img id="'.$filaMarcas["idcelulares"].'" alt="'.$filaMarcas["nombre"].'" draggable="true"  ondragstart="start(event)" ondragend="end(event)"  onmouseout="set('.$filaMarcas["idcelulares"].','.$filaMarcas1["nombre"].')" src="'.$filaMarcas["url"].'"/></li>'
 							;
 								
 					}
@@ -30,7 +30,7 @@
 					while($filaMarcas1= $realizando1->fetch_assoc())
 					{
 						$resultado.=
-						' <li><img id="'.$filaMarcas1["idmarcas"].'" alt="'.$filaMarcas1["nombre"].'"  src="'.$filaMarcas1["url"].'"/></li>'
+						' <li ><img  id="'.$filaMarcas1["idmarcas"].'" alt="'.$filaMarcas1["nombre"].'"  onmouseout="set('.$filaMarcas1["idcelulares"].','.$filaMarcas1["nombre"].')" src="'.$filaMarcas1["url"].'"/></li>'
 							;
 								
 					}
