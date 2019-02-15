@@ -1,5 +1,3 @@
-<script>
-
 	var nombrecelular,urlcel;
 	var nombremarca,celulares,urlmarca;
 	var cont;
@@ -41,11 +39,11 @@ var sony= new Marca("Sony","/marcas/logo-sony.png");
 
 var sonycel= new Celular("sony1","celulares/cel1-sony.png")
 var sonycel1= new Celular("sony2","celulares/cel2-sony.png")
-var sonyce2= new Celular("sony3","celulares/cel3-sony.png")
+var sonycel2= new Celular("sony3","celulares/cel3-sony.png")
 var sonycel3= new Celular("sony4","celulares/cel4-sony.png")
 var sonycel4= new Celular("sony5","celulares/cel5-sony.png")
 var sonycel5= new Celular("sony6","celulares/cel6-sony.png")
-var sonyce6= new Celular("sony7","celulares/cel7-sony.png")
+var sonycel6= new Celular("sony7","celulares/cel7-sony.png")
 var sonycel7= new Celular("sony8","celulares/cel8-sony.png")
 var sonycel8= new Celular("sony9","celulares/cel9-sony.png");
 var sonycel9= new Celular("sony10","celulares/cel10-sony.png")
@@ -84,7 +82,7 @@ xiaomi.agregarCelular(xiaomicel6);
 xiaomi.agregarCelular(xiaomicel7);
 xiaomi.agregarCelular(xiaomicel8);
 xiaomi.agregarCelular(xiaomicel9);
-
+/*
 alert("hola soy la marca "+sony.nombremarca+" y mi foto esta en "+sony.urlmarca);
 for (var i =  0; i <=sony.cont; i++) {
 	alert("soy celular de marca "+sony.nombremarca+" y me llamo "+sony.celulares[i].nombrecelular+"y mi foto esta en "+
@@ -96,5 +94,4 @@ alert( "hola soy la marca "+xiaomi.nombremarca+" y mi foto esta en "+xiaomi.urlm
 for (var i =  0; i <=xiaomi.cont; i++) {
 	alert("soy celular de marca "+xiaomi.nombremarca+" y me llamo "+xiaomi.celulares[i].nombrecelular+"y mi foto esta en "+
 		xiaomi.celulares[i].urlcel);
-}
-</script>
+}*/

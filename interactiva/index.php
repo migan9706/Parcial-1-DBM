@@ -28,7 +28,7 @@ $_SESSION["ventana"] = "1";
  <section>
   <div class="col-sm-1">
     <div id="menu">
-      <div id="compartir">
+      <div id="compartir" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return cop(event)">
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
           Eliminar
