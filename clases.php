@@ -26,7 +26,7 @@ class Marca{
 	 public function agregarCel(Celular $cel)
 	 {
 	 	if ($cel instanceof Celular) {
-	 			$this->Celulares[]=$cel;
+	 			$this->celulares[]=$cel;
 	 		}
 	 }		
 	public function setUrlM($url)
@@ -49,6 +49,10 @@ class Marca{
     public  function setId($i){
      $this->id=$i;
    }
+   public function getCelulares()
+   {
+      return $this->celulares;
+   } 
 }  
 class Celular{
 	private $nombre;
