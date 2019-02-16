@@ -1,6 +1,6 @@
 <?php
 	$hostname="localhost";
-	$database="dbm";
+	$database="mesainteractiva";
 	$username="root";
 	$password="";
 

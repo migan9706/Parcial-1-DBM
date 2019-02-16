@@ -32,9 +32,12 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
                 return false; // En el cuadro2 se puede soltar cualquier elemento menos el elemento con id=arrastrable3
             }   
 
-            if (id == 'cuadro3')
+            if (id == 'cuadro3-1')
                 return false;
-    
+
+            if (id == 'cuadro3-2')
+                return false;
+
             if (id == 'papelera')
                 return false; // Cualquier elemento se puede soltar en la papelera
                 
