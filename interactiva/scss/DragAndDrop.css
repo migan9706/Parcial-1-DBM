@@ -113,7 +113,7 @@ button{
     height: 400px;
 }
 
-#cuadro1, #cuadro3 {
+#cuadro1, #cuadro3-1, #cuadro3-2{
     float: left;
     width: 20%;
     height: 400px;
@@ -130,7 +130,11 @@ button{
 #cuadro2-1{
     background-color: blue;
 }
-#cuadro3 {
+#cuadro3-1{
+    background: #f55;
+
+}
+#cuadro3-2{
     background: #f55;
 
 }

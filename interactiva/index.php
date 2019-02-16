@@ -21,6 +21,7 @@ $_SESSION["ventana"] = "1";
     <script type="text/javascript" src="JavaScript/claseMarcaYCelular.js"></script>
     <script type="text/javascript" src="JavaScript/carrusel.js"></script>
     <script type="text/javascript" src="JavaScript/Display.js"></script>
+    <script type="text/javascript" src="JavaScript/colores.js"></script>
 
  
 </head>
@@ -28,7 +29,7 @@ $_SESSION["ventana"] = "1";
  <section>
   <div class="col-sm-1">
     <div id="menu">
-      <div id="compartir" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return cop(event)">
+      <div id="compartir">
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
           Eliminar
@@ -79,13 +80,17 @@ $_SESSION["ventana"] = "1";
  </section>
 
  <section>
-  <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
-    <h1>Arrastre aqui</h1>
+  <div id="cuadro3-1" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
+    <h1 >Arrastre aqui</h1>
    
   
-   <div class="colorCel1" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    Espacio colores
+   <div class="colorCel1" style="background-color: transparent; border-color: transparent;">
+     
+  		<img src="Imagenes/icono/color1.png" onmousedown ="cargarcolor1()"  onmouseup="quitarcolor2()" width="42" height="42">
+  		<img src="Imagenes/icono/color2.png" onmousedown ="cargarcolor2()"  onmouseup="quitarcolor2()" width="42" height="42">
+
    </div>
+  
   </div>
   <div id="cuadro2-1" style="background-color: #FBB678">
   </div>
@@ -102,14 +107,14 @@ $_SESSION["ventana"] = "1";
   </div>
   <div id="cuadro2-2" style="background-color: #FBB678">
   </div>
-  <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
+  <div id="cuadro3-2" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
    <h1>
      Arrastre Aqui
    </h1>
-   <div class="colorCel2" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    Espacio colores
+   <div class="colorCel2" style="background-color: transparent; border-color: transparent;">
+  		<img src="Imagenes/icono/color1.png" onmouseup="cargarcolor3()" onmouseover="quitarcolor2()" width="42" height="42">
+  		<img src="Imagenes/icono/color2.png" onmouseup="cargarcolor4()"  onmouseover="quitarcolor2()" width="42" height="42">
 
-    
    </div>
   </div>
   <!--<div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">Papelera</div>-->
