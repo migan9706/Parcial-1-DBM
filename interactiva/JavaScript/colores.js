@@ -1,30 +1,37 @@
 function cargarcolor1()
 {
-	document.getElementById("cuadro3-1").style.backgroundImage ="url('./Imagenes/icono/azultapa.png')";
+	document.getElementById("imagen-colores1").src ="./Imagenes/icono/azultapa.png";
+	document.getElementById("imagen-colores1").style.visibility="visible";
 	
 }
 function cargarcolor2()
 {
-	document.getElementById("cuadro3-1").style.backgroundImage="url('./Imagenes/icono/taparosa.png')";
+		document.getElementById("imagen-colores1").src ="./Imagenes/icono/taparosa.png";
+		document.getElementById("imagen-colores1").style.visibility="visible";
 	
 }
 function cargarcolor3()
 {
-	document.getElementById("cuadro3-2").style.backgroundImage ="url('./Imagenes/icono/azultapa.png')";
+	document.getElementById("imagen-colores2").src ="./Imagenes/icono/azultapa.png";
+	document.getElementById("imagen-colores2").style.visibility="visible";
 	
 }
 function cargarcolor4()
 {
-	document.getElementById("cuadro3-2").style.backgroundImage="url('./Imagenes/icono/taparosa.png')";
+		document.getElementById("imagen-colores2").src ="./Imagenes/icono/taparosa.png";
+		document.getElementById("imagen-colores2").style.visibility="visible";
 	
 }
+
 function quitarcolor1()
 {
-	document.getElementById("cuadro3-1").style.backgroundColor ="#f55";
+	document.getElementById("imagen-colores1").style.visibility="hidden";
+	
 	
 }
 function quitarcolor2()
 {
-	document.getElementById("cuadro3-2").style.backgroundColor ="#f55";
+	document.getElementById("imagen-colores2").style.visibility="hidden";
+	
 	
 }

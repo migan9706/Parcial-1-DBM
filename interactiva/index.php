@@ -82,12 +82,12 @@ $_SESSION["ventana"] = "1";
  <section>
   <div id="cuadro3-1" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
     <h1 >Arrastre aqui</h1>
-   
+   <img id="imagen-colores1" src="" style="visibility: hidden;">
   
    <div class="colorCel1" style="background-color: transparent; border-color: transparent;">
      
-  		<img src="Imagenes/icono/color1.png" onmousedown ="cargarcolor1()"  onmouseup="quitarcolor2()" width="42" height="42">
-  		<img src="Imagenes/icono/color2.png" onmousedown ="cargarcolor2()"  onmouseup="quitarcolor2()" width="42" height="42">
+  		<img src="Imagenes/icono/color1.png" onmousedown ="cargarcolor1()"  onmouseup="quitarcolor1()" width="42" height="42">
+  		<img src="Imagenes/icono/color2.png" onmousedown ="cargarcolor2()"  onmouseup="quitarcolor1()" width="42" height="42">
 
    </div>
   
@@ -111,6 +111,7 @@ $_SESSION["ventana"] = "1";
    <h1>
      Arrastre Aqui
    </h1>
+   <img id="imagen-colores2" src="" style="visibility: hidden;">
    <div class="colorCel2" style="background-color: transparent; border-color: transparent;">
   		<img src="Imagenes/icono/color1.png" onmouseup="cargarcolor3()" onmouseover="quitarcolor2()" width="42" height="42">
   		<img src="Imagenes/icono/color2.png" onmouseup="cargarcolor4()"  onmouseover="quitarcolor2()" width="42" height="42">
