@@ -94,7 +94,7 @@ $_SESSION["ventana"] = "1";
    </div>
   
   </div>
-  <div id="cuadro2-1" style="background-color: #FBB678">
+  <div id="cuadro2-1" style="background-color: white">
   </div>
   <div id="opciones">
     <ul>
@@ -107,7 +107,7 @@ $_SESSION["ventana"] = "1";
      </center>	 
     </ul>
   </div>
-  <div id="cuadro2-2" style="background-color: #FBB678">
+  <div id="cuadro2-2" style="background-color: white">
   </div>
   <div id="cuadro3-2" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
    <h1>
