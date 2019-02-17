@@ -30,6 +30,7 @@ $_SESSION["ventana"] = "1";
   <div class="col-sm-1">
     <div id="menu">
       <div id="compartir">
+        Compartir
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
           Eliminar
@@ -39,7 +40,7 @@ $_SESSION["ventana"] = "1";
   </div>
 
    <div class="carrusel" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
-      <div class="col-sm-10" style="background-color:yellow;">
+      <div class="col-sm-10" style="background-color:white;">
       <br>
       <br>
       <div class="col-sm-12" style="background-color:transparent;">
@@ -71,6 +72,7 @@ $_SESSION["ventana"] = "1";
      <div class="col-sm-1">
         <div id="menu">
       <div id="compartir">
+        Compartir
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
           Eliminar

@@ -13,11 +13,17 @@
 						
 					while($filaMarcas= $realizando->fetch_assoc())
 					{
-						$resultado.=
+						/*$resultado.=
 						'
 						 <script type="text/javascript" src="JavaScript/Display.js"></script>
 						 <li ><img name="'.$filaMarcas["idcelulares"].'" id="'.$filaMarcas["idcelulares"].'" alt="'.$filaMarcas["nombre"].'" draggable="true"  
 						  ondragstart="start(event)" onmousedown="setCel('.$filaMarcas["idcelulares"].')" onmouseleave="setCel1('.$filaMarcas["idcelulares"].')"  src="'.$filaMarcas["url"].'"/></li>'
+							;*/
+							$resultado.=
+						'
+						 <script type="text/javascript" src="JavaScript/Display.js"></script>
+						 <li ><img name="'.$filaMarcas["idcelulares"].'" id="'.$filaMarcas["idcelulares"].'" alt="'.$filaMarcas["nombre"].'" draggable="true"  
+						  ondragstart="start(event)" onmouseover="setCel('.$filaMarcas["idcelulares"].')" onmouseout="setCel1('.$filaMarcas["idcelulares"].')" src="'.$filaMarcas["url"].'"/></li>'
 							;
 								
 					}
