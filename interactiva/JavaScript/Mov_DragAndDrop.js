@@ -99,7 +99,6 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
         **/
         function clonar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
-
             elementoArrastrado.style.opacity = ''; // Dejamos la opacidad a su estado anterior para copiar el elemento igual que era antes
 
             var elementoClonado = elementoArrastrado.cloneNode(true); // Se clona el elemento
