@@ -30,10 +30,12 @@ $_SESSION["ventana"] = "1";
   <div class="col-sm-1">
     <div id="menu">
       <div id="compartir">
+        <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px" />
         Compartir
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
-          Eliminar
+        <img src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" />
+          Papelera
        </div>
     </div>
 
@@ -72,10 +74,12 @@ $_SESSION["ventana"] = "1";
      <div class="col-sm-1">
         <div id="menu">
       <div id="compartir">
+        <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px" />
         Compartir
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
-          Eliminar
+        <img src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" />
+          Papelera
        </div>
     </div>
   </div>
