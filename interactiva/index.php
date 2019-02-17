@@ -30,16 +30,19 @@ $_SESSION["ventana"] = "1";
   <div class="col-sm-1">
     <div id="menu">
       <div id="compartir">
+        <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px" />
+        Compartir
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
-          Eliminar
+        <img src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" />
+          Papelera
        </div>
     </div>
 
   </div>
 
    <div class="carrusel" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
-      <div class="col-sm-10" style="background-color:yellow;">
+      <div class="col-sm-10" style="background-color:white;">
       <br>
       <br>
       <div class="col-sm-12" style="background-color:transparent;">
@@ -71,9 +74,12 @@ $_SESSION["ventana"] = "1";
      <div class="col-sm-1">
         <div id="menu">
       <div id="compartir">
+        <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px" />
+        Compartir
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
-          Eliminar
+        <img src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" />
+          Papelera
        </div>
     </div>
   </div>
@@ -92,7 +98,7 @@ $_SESSION["ventana"] = "1";
    </div>
   
   </div>
-  <div id="cuadro2-1" style="background-color: #FBB678">
+  <div id="cuadro2-1" style="background-color: white">
   </div>
   <div id="opciones">
     <ul>
@@ -105,7 +111,7 @@ $_SESSION["ventana"] = "1";
      </center>	 
     </ul>
   </div>
-  <div id="cuadro2-2" style="background-color: #FBB678">
+  <div id="cuadro2-2" style="background-color: white">
   </div>
   <div id="cuadro3-2" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
    <h1>

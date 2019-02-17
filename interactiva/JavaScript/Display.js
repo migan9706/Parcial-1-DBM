@@ -1,13 +1,13 @@
 function setCel(id) {
 	
 		document.getElementById(id).style.height = "100px";
-		document.getElementById(id).style.width = "100px";
+		document.getElementById(id).style.width = "50px";
 	
 	}	
 function setCel1(id) {
 	
-		document.getElementById(id).style.height = "100%";
-		document.getElementById(id).style.width = "150px";
+		document.getElementById(id).style.height = "120px";
+		document.getElementById(id).style.width = "80px";
 	
 	}	
 
