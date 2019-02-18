@@ -34,7 +34,7 @@ $_SESSION["ventana"] = "1";
         Compartir
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
-        <img src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" />
+        <img id="pap" src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)"/>
           Papelera
        </div>
     </div>
@@ -82,7 +82,7 @@ $_SESSION["ventana"] = "1";
         Compartir
       </div>
        <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
-        <img src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" />
+        <img id="pap" src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)"/>
           Papelera
        </div>
     </div>
