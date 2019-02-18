@@ -1,3 +1,4 @@
+/*visualizacion de los telefonos en el carrusel todos con elmismo tamaño*/
 function setCel(id) {
 	
 		document.getElementById(id).style.height = "100px";

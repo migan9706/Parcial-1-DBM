@@ -1,5 +1,4 @@
 <?php
-/* aqu se pide la conexion a la base de datos  para jalar el id de los celulares que se tiene para mostrar en el carrusel y mostrar el efecto de drag */
 
 	include ("PHP/Conexion.php");
 	$marca=$_POST['marcas'];
