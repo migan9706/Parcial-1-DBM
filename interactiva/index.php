@@ -49,6 +49,10 @@ $_SESSION["ventana"] = "1";
       <div class="carousel right">
       <div class="indicator"></div>
       <div class="wrap">
+      <!-- Se utiliza  la función obtener_registros para generar elementos <li></li>
+      	que son las marcas y los celulares
+
+      -->
       <button style="width:100%; height:50px; font-size: 30px;" onclick="obtener_registros()">Home</button>
       <ul id="carrusel" style="height: 130px; width: 100px; background-color: transparent;">
       
@@ -88,10 +92,15 @@ $_SESSION["ventana"] = "1";
  <section>
   <div id="cuadro3-1" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
     <h1 >Arrastre aqui</h1>
+    <!--Se inicializa una imagen no visible para almacenar el cambio de colores-->
+
    <img id="imagen-colores1" src="" style="visibility: hidden;">
   
    <div class="colorCel1" style="background-color: transparent; border-color: transparent;">
-     
+     	<!--Aqui se crean imagenes que serviran como botones para hacer en cambio de colores mediante las funciones cargarcolor1()
+     	cargarcolor2() y se usa el mismo evento quitarcolor1() para ambos casos
+     -->
+
   		<img src="Imagenes/icono/color1.png" onmousedown ="cargarcolor1()"  onmouseup="quitarcolor1()" width="42" height="42">
   		<img src="Imagenes/icono/color2.png" onmousedown ="cargarcolor2()"  onmouseup="quitarcolor1()" width="42" height="42">
 
@@ -117,6 +126,10 @@ $_SESSION["ventana"] = "1";
    <h1>
      Arrastre Aqui
    </h1>
+   <!--Aqui se crean imagenes que serviran como botones para hacer en cambio de colores mediante las funciones cargarcolor3()
+     	cargarcolor4() y se usa el mismo evento quitarcolor2() para ambos casos
+     -->
+
    <img id="imagen-colores2" src="" style="visibility: hidden;">
    <div class="colorCel2" style="background-color: transparent; border-color: transparent;">
   		<img src="Imagenes/icono/color1.png" onmouseup="cargarcolor3()" onmouseover="quitarcolor2()" width="42" height="42">
