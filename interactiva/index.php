@@ -103,6 +103,7 @@ $_SESSION["ventana"] = "1";
   <div id="opciones">
     <ul>
     <center>
+       <!--En esta parte vemos los botnes de la mesa la cual son las caracteristicas de cada celular y dependiendo de la caracteristica que se desea ver, esta llama a una funcion es ejecutada cuenado el usuario hace click en el boton, la funcion cargarinfo() se encuentra en un archivo JScript llamado EventCaract el cual este  mostrara la informacion que se requiera -->
       <li><button onclick="cargarinfo1()" ondblclick="oc()"><img src="Imagenes/icono/red.png" alt="x" />   Red</button></li>
       <li><button onclick="cargarinfo2()" ondblclick="oc()"><img src="Imagenes/icono/memoria.png" alt="x" />   Memoria</button></li>
       <li><button onclick="cargarinfo3()" ondblclick="oc()"><img src="Imagenes/icono/almacenamiento.png" alt="x" /> tarjeta de memoria</button></li>

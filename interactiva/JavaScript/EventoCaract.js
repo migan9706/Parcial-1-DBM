@@ -1,4 +1,6 @@
 //include(JavaScript/claseMarcaYCelular.js);
+//aqui se muestra las funciones que se llaman desde el index.php, cuando un usuario desea ver la informacion cierto celular, el boton llama la funcion cargarinfo() y dependiendo de la caracteristica que se desee adquirir el archivo manda el resultado que llama esa funcion
+//ademas para que la informacion no se muestre aleatoriamente o una encima de otra se coloco la informacion en ciertos sectores para que asi no haya problemas de sobreexponer informacion y asi sea mas facil de ver, cada sector esta determinado en el archivo de estilo css
 
 function cargarinfo1(){
 
