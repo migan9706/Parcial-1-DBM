@@ -103,24 +103,30 @@ cel = "";
         **/
         function eliminar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
-            //
+            //Se verifica de que celular estamos arrastrando
             if(cel == "izq"){
+                //Se ocultan todos elementos del celular 1
                 document.getElementById("cuadro2-1").style.visibility="hidden";
                 document.getElementById("papelera").style.visibility="hidden";
                 document.getElementById("compartir").style.visibility="hidden";
                 document.getElementById("colores1").style.visibility="hidden";
                 document.getElementById("texto1").style.visibility="visible";
+                //Se verifica si hay otro celular
                 if (document.getElementById("der")==null) {
+                    //se oculta el div de opciones
                     document.getElementById("opciones").style.visibility="hidden";
                 }
             }
             if (cel == "der") {
+                //Se ocultan todos elementos del celular 2
                 document.getElementById("cuadro2-2").style.visibility="hidden";
                 document.getElementById("papeleraDer").style.visibility="hidden";
                 document.getElementById("compartirDer").style.visibility="hidden";
                 document.getElementById("colores2").style.visibility="hidden";
                 document.getElementById("texto2").style.visibility="visible";
+                //Se verifica si hay otro celular
                 if (document.getElementById("izq")==null) {
+                    //se oculta el div de opciones
                     document.getElementById("opciones").style.visibility="hidden";
                 }
             }
@@ -136,6 +142,7 @@ cel = "";
         function clonar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
             elementoArrastrado.style.opacity = ''; // Dejamos la opacidad a su estado anterior para copiar el elemento igual que era antes
+            
             if (document.getElementById(cel) != null) {
                 e.target.removeChild(document.getElementById(cel)); // Se elimina celular
             }
