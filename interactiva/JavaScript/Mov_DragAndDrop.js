@@ -229,3 +229,17 @@ cel = "";
             e.target.appendChild(elementoClonado); // Se añade el elemento clonado
             e.target.style.border = '';   // Quita el borde del "cuadro clonador"
         }
+
+        function compartir(e){
+            //var id = e.target.id; // Elemento sobre el que se arrastra
+            if (cel == 'izq'){
+                document.getElementById("compIzq").style.height="50%";
+                document.getElementById("compIzq").style.width = "50%";
+            }
+            // return false para que se pueda soltar
+            if (cel == 'der'){
+                document.getElementById("compDer").style.height="50%";
+                document.getElementById("compDer").style.width = "50%";
+            }
+            window.open("index.php");
+        }
