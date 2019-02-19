@@ -48,7 +48,7 @@ $_SESSION["ventana"] = "1";
       <div class="col-sm-12" style="background-color:transparent;">
       <div class="carousel right">
       <div class="indicator"></div>
-      <div class="wrap">
+      <div class="wrap" >
       <!-- Se utiliza  la función obtener_registros para generar elementos <li></li>
       	que son las marcas y los celulares
 
@@ -114,10 +114,10 @@ $_SESSION["ventana"] = "1";
     <center>
        <!--En esta parte vemos los botnes de la mesa la cual son las caracteristicas de cada celular y dependiendo de la caracteristica que se desea ver, esta llama a una funcion es ejecutada cuenado el usuario hace click en el boton, la funcion cargarinfo() se encuentra en un archivo JScript llamado EventCaract el cual este  mostrara la informacion que se requiera -->
       <li><button onclick="cargarinfo1()" ondblclick="oc()"><img src="Imagenes/icono/red.png" alt="x" />   Red</button></li>
-      <li><button onclick="cargarinfo2()" ondblclick="oc()"><img src="Imagenes/icono/memoria.png" alt="x" />   Memoria</button></li>
-      <li><button onclick="cargarinfo3()" ondblclick="oc()"><img src="Imagenes/icono/almacenamiento.png" alt="x" /> tarjeta de memoria</button></li>
+      <li><button onclick="cargarinfo2()" ondblclick="oc()"><img src="Imagenes/icono/memoria.png" alt="x" />  CPU</button></li>
+      <li><button onclick="cargarinfo3()" ondblclick="oc()"><img src="Imagenes/icono/bateria.png" alt="x" /> Bateria</button></li>
       <li><button onclick="cargarinfo4()" ondblclick="oc()"><img src="Imagenes/icono/camara.png" alt="x" />  Cámara</button></li>
-      <li><button onclick="cargarinfo5()" ondblclick="oc()"><img src="Imagenes/icono/peso.png" alt="x" />  Peso</button></li>
+      <li><button onclick="cargarinfo5()" ondblclick="oc()"><img src="Imagenes/icono/peso.png" alt="x" />  Dimensiones y Peso</button></li>
      </center>	 
     </ul>
   </div>

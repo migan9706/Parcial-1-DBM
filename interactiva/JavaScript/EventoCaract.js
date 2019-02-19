@@ -4,65 +4,64 @@
 
 function cargarinfo1(){
 	if (document.getElementById("cuadro2-1").style.visibility == "visible") {
-        document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel1red.png") no-repeat right top';
+        document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1red.png") no-repeat right top';
     }
     if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
-    	document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel2red.png") no-repeat right top';
+    	document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2red.png") no-repeat right top';
     }
 	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
-		document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel1red.png") no-repeat right top';
-		document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel2red.png") no-repeat right top';
+		document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1red.png") no-repeat right top';
+		document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2red.png") no-repeat right top';
 	}
 }
 function cargarinfo2(){
-	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
-		document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel2ram.png") no-repeat right top';
-	document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3ram.png") no-repeat right top';
-	}
 	if (document.getElementById("cuadro2-1").style.visibility == "visible") {
-        document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel2ram.png") no-repeat right top';
-	}
-    if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
-    	document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3ram.png") no-repeat right top';
+        document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1ram.png") no-repeat right top';
     }
+    if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
+    	document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2ram.png") no-repeat right top';
+    }
+	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
+		document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1ram.png") no-repeat right top';
+		document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2ram.png") no-repeat right top';
+	}
 }
 function cargarinfo3(){
-	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
-		document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel4memoria.png") no-repeat right top';
-		document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3memoria.png") no-repeat right top';
-	}
 	if (document.getElementById("cuadro2-1").style.visibility == "visible") {
-		document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel4memoria.png") no-repeat right top';
-	}
-    if (document.getElementById("cuadro2-2").style.visibility == "visible") { 
-		document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3memoria.png") no-repeat right top';
+        document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1pila.png") no-repeat right top';
     }
+    if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
+    	document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2pila.png") no-repeat right top';
+    }
+	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
+		document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1pila.png") no-repeat right top';
+		document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2pila.png") no-repeat right top';
+	}
 }
 function cargarinfo4(){
-	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
-		document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel2camara.png") no-repeat right top';
-		document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3camara.png") no-repeat right top';
-	}
 	if (document.getElementById("cuadro2-1").style.visibility == "visible") {
-        document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel2camara.png") no-repeat right top';
-	}
-    if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
-    	document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3camara.png") no-repeat right top';
+        document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1camara.png") no-repeat right top';
     }
+    if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
+    	document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2camara.png") no-repeat right top';
+    }
+	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
+		document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1camara.png") no-repeat right top';
+		document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2camara.png") no-repeat right top';
+	}
 }
-function cargarinfo5(){
-	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
-		document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel4peso.png") no-repeat right top';
-		document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3peso.png") no-repeat right top';
-	}
-	if (document.getElementById("cuadro2-1").style.visibility == "visible") {
-        document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel4peso.png") no-repeat right top';
-	}
-    if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
-    	document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3peso.png") no-repeat right top';
-    }
-	
 
+function cargarinfo5(){
+	if (document.getElementById("cuadro2-1").style.visibility == "visible") {
+        document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1peso.png") no-repeat right top';
+    }
+    if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
+    	document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2peso.png") no-repeat right top';
+    }
+	if (document.getElementById("cuadro2-1").style.visibility == "visible" && document.getElementById("cuadro2-2").style.visibility == "visible") {
+		document.getElementById('cuadro2-1').style.background=' url("Imagenes/informacion/cel1peso.png") no-repeat right top';
+		document.getElementById('cuadro2-2').style.background=' url("Imagenes/informacion/cel2peso.png") no-repeat right top';
+	}
 }
 
 function oc(){
