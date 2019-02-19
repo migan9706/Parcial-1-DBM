@@ -28,6 +28,7 @@ function cargarcolor2()
 }
 function cargarcolor3()
 {
+	document.getElementById("der").style.visibility="hidden";
 	//lo primero que hacemos es poner la imagen como nuevo elemento
 	document.getElementById("imagen-colores2").src ="./Imagenes/icono/azultapa.png";
 	document.getElementById("imagen-colores2").style.visibility="visible";
@@ -41,6 +42,7 @@ function cargarcolor3()
 }
 function cargarcolor4()
 {
+	document.getElementById("der").style.visibility="hidden";
 		//lo primero que hacemos es poner la imagen como nuevo elemento
 		document.getElementById("imagen-colores2").src ="./Imagenes/icono/taparosa.png";
 		document.getElementById("imagen-colores2").style.visibility="visible";
@@ -55,6 +57,7 @@ function cargarcolor4()
 
 function quitarcolor1()
 {
+	document.getElementById("izq").style.visibility="visible";
 	//ocultamos el elemento a la vista 
 	document.getElementById("imagen-colores1").style.visibility="hidden";
 	//se reduce el tamaño al minimo
@@ -65,6 +68,7 @@ function quitarcolor1()
 }
 function quitarcolor2()
 {
+	document.getElementById("der").style.visibility="visible";
 	//ocultamos el elemento a la vista 
 	document.getElementById("imagen-colores2").style.visibility="hidden";
 	//se reduce el tamaño al minimo
