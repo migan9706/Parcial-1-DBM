@@ -94,13 +94,19 @@ cel = "";
                 return false; // Cualquier elemento se puede soltar en la papelera
             }
             if (id == 'papDer'){//id de imagen de la papelera
-
                 return false; // Cualquier elemento se puede soltar en la papelera
             }  
             if (id == 'papIzq'){//id de imagen de la papelera
-
                 return false; // Cualquier elemento se puede soltar en la papelera
             } 
+            if (id == 'compIzq'){
+                return false;
+            }
+            // return false para que se pueda soltar
+            if (id == 'compDer'){
+                return false;
+            }
+
         }
 
     
@@ -158,6 +164,8 @@ cel = "";
                 document.getElementById("compartir").style.visibility="hidden";
                 document.getElementById("colores1").style.visibility="hidden";
                 document.getElementById("texto1").style.visibility="visible";
+                document.getElementById("papIzq").style.height="50%";
+                document.getElementById("papIzq").style.width = "50%";
                 //Se verifica si hay otro celular
                 if (document.getElementById("der")==null) {
                     //se oculta el div de opciones
@@ -171,6 +179,8 @@ cel = "";
                 document.getElementById("compartirDer").style.visibility="hidden";
                 document.getElementById("colores2").style.visibility="hidden";
                 document.getElementById("texto2").style.visibility="visible";
+                document.getElementById("papDer").style.height="50%";
+                document.getElementById("papDer").style.width = "50%";
                 //Se verifica si hay otro celular
                 if (document.getElementById("izq")==null) {
                     //se oculta el div de opciones
