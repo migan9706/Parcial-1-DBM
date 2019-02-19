@@ -46,7 +46,7 @@ function cargarinfo4(){
 	if (document.getElementById("cuadro2-1").style.visibility == "visible") {
         document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel2camara.png") no-repeat right top';
 	}
-    if (ddocument.getElementById("cuadro2-2").style.visibility == "visible") {           
+    if (document.getElementById("cuadro2-2").style.visibility == "visible") {           
     	document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel3camara.png") no-repeat right top';
     }
 }

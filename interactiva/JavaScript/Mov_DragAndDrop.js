@@ -3,14 +3,14 @@ cuadro = "";
 cel = "";
         function start(e) {
             e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
-            e.dataTransfer.setData("Data", e.target.id); // Coje el elemento que se va a mover
+            e.dataTransfer.setData("Data", e.target.id); // Toma el elemento que se va a mover
             e.dataTransfer.setDragImage(e.target, 0, 0); // Define la imagen que se vera al ser arrastrado el elemento y por donde se coje el elemento que se va a mover (el raton aparece en la esquina sup_izq con 0,0)
             e.target.style.opacity = '0.4'; 
         }
 
         function end(e){
             e.target.style.opacity = ''; // Pone la opacidad del elemento a 1           
-            e.dataTransfer.clearData("Data");
+            e.dataTransfer.clearData("Data");//Al finalizar se limpia la imagen
         }
 
         function enter(e) {
@@ -67,12 +67,14 @@ cel = "";
             var elementoArrastrado = e.dataTransfer.getData("Data"); // Elemento arrastrado
             e.target.appendChild(document.getElementById(elementoArrastrado));
             e.target.style.border = '';  // Quita el borde
+            //Obten el tamaño de la ventana
             tamContX = $('#'+e.target.id).width();
             tamContY = $('#'+e.target.id).height();
 
+            //Obten el tamaño del elemento
             tamElemX = $('#'+elementoArrastrado).width();
             tamElemY = $('#'+elementoArrastrado).height();
-    
+            //Se obtiene la posicion del elemento
             posXCont = $('#'+e.target.id).position().left;
             posYCont = $('#'+e.target.id).position().top;
 
@@ -101,24 +103,24 @@ cel = "";
         **/
         function eliminar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
-            
-            if(e.dataTransfer.getData("Data") == "izq"){
+            //
+            if(cel == "izq"){
                 document.getElementById("cuadro2-1").style.visibility="hidden";
                 document.getElementById("papelera").style.visibility="hidden";
                 document.getElementById("compartir").style.visibility="hidden";
                 document.getElementById("colores1").style.visibility="hidden";
                 document.getElementById("texto1").style.visibility="visible";
-                if (document.getElementById("der") != "der") {
+                if (document.getElementById("der")==null) {
                     document.getElementById("opciones").style.visibility="hidden";
                 }
             }
-            if (e.dataTransfer.getData("Data") == "der") {
+            if (cel == "der") {
                 document.getElementById("cuadro2-2").style.visibility="hidden";
                 document.getElementById("papeleraDer").style.visibility="hidden";
                 document.getElementById("compartirDer").style.visibility="hidden";
                 document.getElementById("colores2").style.visibility="hidden";
                 document.getElementById("texto2").style.visibility="visible";
-                if (document.getElementById("izq") != "izq") {
+                if (document.getElementById("izq")==null) {
                     document.getElementById("opciones").style.visibility="hidden";
                 }
             }
@@ -134,6 +136,9 @@ cel = "";
         function clonar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
             elementoArrastrado.style.opacity = ''; // Dejamos la opacidad a su estado anterior para copiar el elemento igual que era antes
+            if (document.getElementById(cel) != null) {
+                e.target.removeChild(document.getElementById(cel)); // Se elimina celular
+            }
             var elementoClonado = elementoArrastrado.cloneNode(true); // Se clona el elemento
             elementoClonado.id = cel; // Se cambia el id porque tiene que ser unico
             contador += 1;  
