@@ -50,6 +50,11 @@ cel = "";
 
                 return false; // Cualquier elemento se puede soltar en la papelera
             }
+            
+            if (id == 'papeleraDer'){
+
+                return false; // Cualquier elemento se puede soltar en la papelera
+            }
             if (id == 'pap'){//id de imagen de la papelera
 
                 return false; // Cualquier elemento se puede soltar en la papelera
