@@ -30,11 +30,11 @@ $_SESSION["ventana"] = "1";
   <div class="col-sm-1">
     <div id="menu">
       <div id="compartir">
-        <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px" />
+        <img id="compIzq" src="Imagenes/icono/compartir.png" style="height: 50%; width: 50%" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return compartir(event)" />
         Compartir
       </div>
-       <div id="papelera"    ondragenter="return enter(event),activoPap1()" ondragover="return over(event)" ondragleave="return leave(event),desac1()" ondrop="return eliminar(event)">
-        <img id="papIzq" src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)" />
+       <div id="papelera"    ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
+        <img id="papIzq" src="Imagenes/icono/papelera.png" style="height: 50%; width: 50%" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)" />
           Papelera
        </div>
     </div>
@@ -78,11 +78,11 @@ $_SESSION["ventana"] = "1";
      <div class="col-sm-1">
         <div id="menu">
       <div id="compartirDer">
-        <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px"/>
+        <img id="compDer" src="Imagenes/icono/compartir.png" style="height: 50%; width: 50%" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return compartir(event)" />
         Compartir
       </div>
-       <div id="papeleraDer"   ondragenter="return enter(event) , activoPap1()" ondragover="return over(event)" ondragleave="return leave(event),desac2()" ondrop="return eliminar(event)">
-        <img id="papDer" src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)"  />
+       <div id="papeleraDer"   ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
+        <img id="papDer" src="Imagenes/icono/papelera.png" style="height: 50%; width: 50%" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)"  />
           Papelera
        </div>
     </div>

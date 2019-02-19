@@ -5,7 +5,7 @@ cel = "";
             e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
             e.dataTransfer.setData("Data", e.target.id); // Toma el elemento que se va a mover
             e.dataTransfer.setDragImage(e.target, 0, 0); // Define la imagen que se vera al ser arrastrado el elemento y por donde se coje el elemento que se va a mover (el raton aparece en la esquina sup_izq con 0,0)
-            e.target.style.opacity = '0.4'; 
+            //e.target.style.opacity = '0.4'; 
         }
 
         function end(e){
@@ -15,10 +15,48 @@ cel = "";
 
         function enter(e) {
            // e.target.style.border = '3px dotted #555'; 
+           var id = e.target.id; // Elemento sobre el que se arrastra
+             if (id == 'papIzq'){
+                document.getElementById("papIzq").style.height="100%";
+                document.getElementById("papIzq").style.width = "100%";
+            }
+            // return false para que se pueda soltar
+            if (id == 'papDer'){
+                document.getElementById("papDer").style.height="100%";
+                document.getElementById("papDer").style.width = "100%";
+            }
+            if (id == 'compIzq'){
+                document.getElementById("compIzq").style.height="100%";
+                document.getElementById("compIzq").style.width = "100%";
+            }
+            // return false para que se pueda soltar
+            if (id == 'compDer'){
+                document.getElementById("compDer").style.height="100%";
+                document.getElementById("compDer").style.width = "100%";
+            }
         }
 
         function leave(e) {
             e.target.style.border = ''; 
+            var id = e.target.id; // Elemento sobre el que se arrastra
+             if (id == 'papIzq'){
+                document.getElementById("papIzq").style.height="50%";
+                document.getElementById("papIzq").style.width = "50%";
+            }
+            // return false para que se pueda soltar
+            if (id == 'papDer'){
+                document.getElementById("papDer").style.height="50%";
+                document.getElementById("papDer").style.width = "50%";
+            }
+            if (id == 'compIzq'){
+                document.getElementById("compIzq").style.height="50%";
+                document.getElementById("compIzq").style.width = "50%";
+            }
+            // return false para que se pueda soltar
+            if (id == 'compDer'){
+                document.getElementById("compDer").style.height="50%";
+                document.getElementById("compDer").style.width = "50%";
+            }
         }
 
         function over(e) {
@@ -55,10 +93,20 @@ cel = "";
 
                 return false; // Cualquier elemento se puede soltar en la papelera
             }
-            if (id == 'pap'){//id de imagen de la papelera
-
+            if (id == 'papDer'){//id de imagen de la papelera
                 return false; // Cualquier elemento se puede soltar en la papelera
-            }   
+            }  
+            if (id == 'papIzq'){//id de imagen de la papelera
+                return false; // Cualquier elemento se puede soltar en la papelera
+            } 
+            if (id == 'compIzq'){
+                return false;
+            }
+            // return false para que se pueda soltar
+            if (id == 'compDer'){
+                return false;
+            }
+
         }
 
     
@@ -116,6 +164,8 @@ cel = "";
                 document.getElementById("compartir").style.visibility="hidden";
                 document.getElementById("colores1").style.visibility="hidden";
                 document.getElementById("texto1").style.visibility="visible";
+                document.getElementById("papIzq").style.height="50%";
+                document.getElementById("papIzq").style.width = "50%";
                 //Se verifica si hay otro celular
                 if (document.getElementById("der")==null) {
                     //se oculta el div de opciones
@@ -129,6 +179,8 @@ cel = "";
                 document.getElementById("compartirDer").style.visibility="hidden";
                 document.getElementById("colores2").style.visibility="hidden";
                 document.getElementById("texto2").style.visibility="visible";
+                document.getElementById("papDer").style.height="50%";
+                document.getElementById("papDer").style.width = "50%";
                 //Se verifica si hay otro celular
                 if (document.getElementById("izq")==null) {
                     //se oculta el div de opciones
