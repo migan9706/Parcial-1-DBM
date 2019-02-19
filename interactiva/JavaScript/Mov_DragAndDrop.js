@@ -106,6 +106,9 @@ cel = "";
                 document.getElementById("cuadro2-1").style.visibility="hidden";
                 document.getElementById("papelera").style.visibility="hidden";
                 document.getElementById("compartir").style.visibility="hidden";
+                if (document.getElementById("der") != "der") {
+                    document.getElementById("opciones").style.visibility="hidden";
+                }
             }
             if (e.dataTransfer.getData("Data") == "der") {
                 document.getElementById("cuadro2-2").style.visibility="hidden";
@@ -127,6 +130,7 @@ cel = "";
             var elementoClonado = elementoArrastrado.cloneNode(true); // Se clona el elemento
             elementoClonado.id = cel; // Se cambia el id porque tiene que ser unico
             contador += 1;  
+            document.getElementById("opciones").style.visibility="visible";
             if(cuadro == 'cuadro3-1'){
                 document.getElementById("cuadro2-1").style.visibility="visible";
                 document.getElementById("papelera").style.visibility="visible";

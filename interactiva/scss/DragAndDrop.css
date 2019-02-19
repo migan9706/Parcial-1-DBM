@@ -72,6 +72,7 @@ button{
     height: 400px;
 }
 #opciones{
+    visibility: hidden;
     float: left;
     width: 10%;
     height: 400px;
