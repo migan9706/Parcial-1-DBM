@@ -1,4 +1,5 @@
 contador = 1; // Variable global para tener poder poner un id unico a cada elemento cuando se clona.
+cuadro = "";
         function start(e) {
             e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
             e.dataTransfer.setData("Data", e.target.id); // Coje el elemento que se va a mover
@@ -12,7 +13,7 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
         }
 
         function enter(e) {
-            e.target.style.border = '3px dotted #555'; 
+           // e.target.style.border = '3px dotted #555'; 
         }
 
         function leave(e) {
@@ -32,15 +33,26 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
                 return false; // En el cuadro2 se puede soltar cualquier elemento menos el elemento con id=arrastrable3
             }   
 
-            if (id == 'cuadro3-1')
+            if (id == 'cuadro3-1'){
+                //document.getElementById("cuadro3-1").src ="./Imagenes/icono/azultapa.png";
+                cuadro="cuadro3-1";
                 return false;
+            }
 
-            if (id == 'cuadro3-2')
+            if (id == 'cuadro3-2'){
+                //document.getElementById("cuadro3-2").src ="./Imagenes/icono/azultapa.png";
+                cuadro="cuadro3-2";
                 return false;
+            }
 
-            if (id == 'papelera')
+            if (id == 'papelera'){
+
                 return false; // Cualquier elemento se puede soltar en la papelera
-                
+            }
+            if (id == 'pap'){
+
+                return false; // Cualquier elemento se puede soltar en la papelera
+            }   
         }
 
     
@@ -100,10 +112,15 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
         function clonar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
             elementoArrastrado.style.opacity = ''; // Dejamos la opacidad a su estado anterior para copiar el elemento igual que era antes
-
             var elementoClonado = elementoArrastrado.cloneNode(true); // Se clona el elemento
             elementoClonado.id = "Cel" + contador; // Se cambia el id porque tiene que ser unico
             contador += 1;  
+            if(cuadro == 'cuadro3-1'){
+                document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel1red.png") no-repeat right top';
+            }
+            if (cuadro == 'cuadro3-2'){
+                document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel2red.png") no-repeat right top';
+            }
             elementoClonado.style.position = "static";  // Se posiciona de forma "normal" (Sino habria que cambiar las coordenadas de la posición)  
             elementoClonado.style.width = "80%";
             elementoClonado.style.height = "auto";
