@@ -15,10 +15,50 @@ cel = "";
 
         function enter(e) {
            // e.target.style.border = '3px dotted #555'; 
+           var id = e.target.id; // Elemento sobre el que se arrastra
+             if (id == 'papIzq'){
+                document.getElementById("papIzq").style.height="100%";
+                document.getElementById("papIzq").style.width = "100%";
+            }
+            // return false para que se pueda soltar
+            if (id == 'papDer'){
+                document.getElementById("papDer").style.height="100%";
+                document.getElementById("papDer").style.width = "100%";
+            }
+            if (id == 'compIzq'){
+                document.getElementById("compIzq").style.height="100%";
+                document.getElementById("compIzq").style.width = "100%";
+            }
+            // return false para que se pueda soltar
+            if (id == 'compDer'){
+                document.getElementById("compDer").style.height="100%";
+                document.getElementById("compDer").style.width = "100%";
+            }
+            return false;
         }
 
         function leave(e) {
             e.target.style.border = ''; 
+            var id = e.target.id; // Elemento sobre el que se arrastra
+             if (id == 'papIzq'){
+                document.getElementById("papIzq").style.height="50%";
+                document.getElementById("papIzq").style.width = "50%";
+            }
+            // return false para que se pueda soltar
+            if (id == 'papDer'){
+                document.getElementById("papDer").style.height="50%";
+                document.getElementById("papDer").style.width = "50%";
+            }
+            if (id == 'compIzq'){
+                document.getElementById("compIzq").style.height="50%";
+                document.getElementById("compIzq").style.width = "50%";
+            }
+            // return false para que se pueda soltar
+            if (id == 'compDer'){
+                document.getElementById("compDer").style.height="50%";
+                document.getElementById("compDer").style.width = "50%";
+            }
+            return false;
         }
 
         function over(e) {

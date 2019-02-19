@@ -27,26 +27,26 @@ function setMarca1(id){
 function activoPap2()
 {
 	//obtenemos el elmento imagen con id "papIzq" y modificamos su tamaño
-	document.getElementById("papDer").style.height="50%";
-	document.getElementById("papDer").style.width = "50%";
+	document.getElementById("papDer").style.height="100%";
+	document.getElementById("papDer").style.width = "100%";
 
 }
 function activoPap1()
 {
 	//obtenemos el elmento imagen con id "papIzq" y modificamos su tamaño
-	document.getElementById("papIzq").style.height="50%";
-	document.getElementById("papIzq").style.width = "50%";
+	document.getElementById("papIzq").style.height="100%";
+	document.getElementById("papIzq").style.width = "100%";
 }
 function desac1()
 {
 		//se restaura el valor predeterminado del tamaño
-		document.getElementById("papIzq").style.height="100%";
-		document.getElementById("papIzq").style.width = "100%";
+		document.getElementById("papIzq").style.height="50%";
+		document.getElementById("papIzq").style.width = "50%";
 }
 function desac2()
 {
 		//se restaura el valor predeterminado del tamaño
 
-		document.getElementById("papDer").style.height="100%";
-		document.getElementById("papDer").style.width = "100%";
+		document.getElementById("papDer").style.height="50%";
+		document.getElementById("papDer").style.width = "50%";
 }
