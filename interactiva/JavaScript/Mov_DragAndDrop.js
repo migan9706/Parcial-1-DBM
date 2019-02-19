@@ -106,7 +106,9 @@ cel = "";
                 document.getElementById("cuadro2-1").style.visibility="hidden";
                 document.getElementById("papelera").style.visibility="hidden";
                 document.getElementById("compartir").style.visibility="hidden";
-                if (document.getElementById("der") != "der") {
+                document.getElementById("colores1").style.visibility="hidden";
+                document.getElementById("texto1").style.visibility="visible";
+                if (document.getElementById("cuadro2-2").style.visibility == "hidden") {
                     document.getElementById("opciones").style.visibility="hidden";
                 }
             }
@@ -114,6 +116,11 @@ cel = "";
                 document.getElementById("cuadro2-2").style.visibility="hidden";
                 document.getElementById("papeleraDer").style.visibility="hidden";
                 document.getElementById("compartirDer").style.visibility="hidden";
+                document.getElementById("colores2").style.visibility="hidden";
+                document.getElementById("texto2").style.visibility="visible";
+                if (document.getElementById("cuadro2-1").style.visibility == "hidden") {
+                    document.getElementById("opciones").style.visibility="hidden";
+                }
             }
             elementoArrastrado.parentNode.removeChild(elementoArrastrado); // Elimina el elemento
             e.target.style.border = '';   // Quita el borde
@@ -135,12 +142,16 @@ cel = "";
                 document.getElementById("cuadro2-1").style.visibility="visible";
                 document.getElementById("papelera").style.visibility="visible";
                 document.getElementById("compartir").style.visibility="visible";
+                document.getElementById("colores1").style.visibility="visible";
+                document.getElementById("texto1").style.visibility="hidden";
                 document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel1red.png") no-repeat right top';
             }
             if (cuadro == 'cuadro3-2'){
                 document.getElementById("cuadro2-2").style.visibility="visible";
                 document.getElementById("papeleraDer").style.visibility="visible";
                 document.getElementById("compartirDer").style.visibility="visible";
+                document.getElementById("texto2").style.visibility="hidden";
+                document.getElementById("colores2").style.visibility="visible";
                 document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel2red.png") no-repeat right top';
             }
             elementoClonado.style.position = "static";  // Se posiciona de forma "normal" (Sino habria que cambiar las coordenadas de la posición)  
