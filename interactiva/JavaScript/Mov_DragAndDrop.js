@@ -34,13 +34,13 @@ cel = "";
                 return false; // En el cuadro2 se puede soltar cualquier elemento menos el elemento con id=arrastrable3
             }   
 
-            if (id == 'cuadro3-1'){
+            if (id == 'cuadro3-1'){//Espacio celular 1
                 cel="izq";
                 cuadro="cuadro3-1";
                 return false;
             }
 
-            if (id == 'cuadro3-2'){
+            if (id == 'cuadro3-2'){//espacio celular 2 
                 cel="der";
                 cuadro="cuadro3-2";
                 return false;
@@ -50,7 +50,7 @@ cel = "";
 
                 return false; // Cualquier elemento se puede soltar en la papelera
             }
-            if (id == 'pap'){
+            if (id == 'pap'){//id de imagen de la papelera
 
                 return false; // Cualquier elemento se puede soltar en la papelera
             }   
@@ -104,9 +104,13 @@ cel = "";
             
             if(e.dataTransfer.getData("Data") == "izq"){
                 document.getElementById("cuadro2-1").style.visibility="hidden";
+                document.getElementById("papelera").style.visibility="hidden";
+                document.getElementById("compartir").style.visibility="hidden";
             }
             if (e.dataTransfer.getData("Data") == "der") {
                 document.getElementById("cuadro2-2").style.visibility="hidden";
+                document.getElementById("papeleraDer").style.visibility="hidden";
+                document.getElementById("compartirDer").style.visibility="hidden";
             }
             elementoArrastrado.parentNode.removeChild(elementoArrastrado); // Elimina el elemento
             e.target.style.border = '';   // Quita el borde
@@ -125,10 +129,14 @@ cel = "";
             contador += 1;  
             if(cuadro == 'cuadro3-1'){
                 document.getElementById("cuadro2-1").style.visibility="visible";
+                document.getElementById("papelera").style.visibility="visible";
+                document.getElementById("compartir").style.visibility="visible";
                 document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel1red.png") no-repeat right top';
             }
             if (cuadro == 'cuadro3-2'){
                 document.getElementById("cuadro2-2").style.visibility="visible";
+                document.getElementById("papeleraDer").style.visibility="visible";
+                document.getElementById("compartirDer").style.visibility="visible";
                 document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel2red.png") no-repeat right top';
             }
             elementoClonado.style.position = "static";  // Se posiciona de forma "normal" (Sino habria que cambiar las coordenadas de la posición)  
