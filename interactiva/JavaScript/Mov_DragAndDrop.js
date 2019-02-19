@@ -1,5 +1,6 @@
 contador = 1; // Variable global para tener poder poner un id unico a cada elemento cuando se clona.
 cuadro = "";
+cel = "";
         function start(e) {
             e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
             e.dataTransfer.setData("Data", e.target.id); // Coje el elemento que se va a mover
@@ -34,13 +35,13 @@ cuadro = "";
             }   
 
             if (id == 'cuadro3-1'){
-                //document.getElementById("cuadro3-1").src ="./Imagenes/icono/azultapa.png";
+                cel="izq";
                 cuadro="cuadro3-1";
                 return false;
             }
 
             if (id == 'cuadro3-2'){
-                //document.getElementById("cuadro3-2").src ="./Imagenes/icono/azultapa.png";
+                cel="der";
                 cuadro="cuadro3-2";
                 return false;
             }
@@ -100,6 +101,13 @@ cuadro = "";
         **/
         function eliminar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
+            
+            if(e.dataTransfer.getData("Data") == "izq"){
+                document.getElementById("cuadro2-1").style.visibility="hidden";
+            }
+            if (e.dataTransfer.getData("Data") == "der") {
+                document.getElementById("cuadro2-2").style.visibility="hidden";
+            }
             elementoArrastrado.parentNode.removeChild(elementoArrastrado); // Elimina el elemento
             e.target.style.border = '';   // Quita el borde
         }
@@ -113,12 +121,14 @@ cuadro = "";
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
             elementoArrastrado.style.opacity = ''; // Dejamos la opacidad a su estado anterior para copiar el elemento igual que era antes
             var elementoClonado = elementoArrastrado.cloneNode(true); // Se clona el elemento
-            elementoClonado.id = "Cel" + contador; // Se cambia el id porque tiene que ser unico
+            elementoClonado.id = cel; // Se cambia el id porque tiene que ser unico
             contador += 1;  
             if(cuadro == 'cuadro3-1'){
+                document.getElementById("cuadro2-1").style.visibility="visible";
                 document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel1red.png") no-repeat right top';
             }
             if (cuadro == 'cuadro3-2'){
+                document.getElementById("cuadro2-2").style.visibility="visible";
                 document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel2red.png") no-repeat right top';
             }
             elementoClonado.style.position = "static";  // Se posiciona de forma "normal" (Sino habria que cambiar las coordenadas de la posición)  

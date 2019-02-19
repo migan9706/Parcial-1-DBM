@@ -3,6 +3,7 @@ function cargarcolor1()
 		//lo primero que hacemos es poner la imagen como nuevo elemento
 		document.getElementById("imagen-colores1").src ="./Imagenes/icono/azultapa.png";
 		//cambiamos la visibilidad al elemento
+		document.getElementById("izq").style.visibility="hidden";
 		document.getElementById("imagen-colores1").style.visibility="visible";
 		//editamos el porcentaje de altura
 		document.getElementById("imagen-colores1").style.heigth="100%";
@@ -14,6 +15,7 @@ function cargarcolor1()
 }
 function cargarcolor2()
 {
+		document.getElementById("izq").style.visibility="hidden";
 		//lo primero que hacemos es poner la imagen como nuevo elemento
 		document.getElementById("imagen-colores1").src ="./Imagenes/icono/taparosa.png";
 		//editamos el porcentaje de ancho
