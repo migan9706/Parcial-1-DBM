@@ -33,8 +33,8 @@ $_SESSION["ventana"] = "1";
         <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px" />
         Compartir
       </div>
-       <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
-        <img src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" />
+       <div id="papelera"    ondragenter="return enter(event),activoPap1()" ondragover="return over(event)" ondragleave="return leave(event),desac1()" ondrop="return eliminar(event)">
+        <img id="papIzq" src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)" />
           Papelera
        </div>
     </div>
@@ -77,12 +77,12 @@ $_SESSION["ventana"] = "1";
    </div>
      <div class="col-sm-1">
         <div id="menu">
-      <div id="compartir">
-        <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px" />
+      <div id="compartirDer">
+        <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px"/>
         Compartir
       </div>
-       <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
-        <img src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" />
+       <div id="papeleraDer"   ondragenter="return enter(event) , activoPap1()" ondragover="return over(event)" ondragleave="return leave(event),desac2()" ondrop="return eliminar(event)">
+        <img id="papDer" src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)"  />
           Papelera
        </div>
     </div>
@@ -91,12 +91,12 @@ $_SESSION["ventana"] = "1";
 
  <section>
   <div id="cuadro3-1" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
-    <h1 >Arrastre aqui</h1>
+    <h1 id="texto1" >Arrastre aqui</h1>
     <!--Se inicializa una imagen no visible para almacenar el cambio de colores-->
 
    <img id="imagen-colores1" src="" style="visibility: hidden;">
   
-   <div class="colorCel1" style="background-color: transparent; border-color: transparent;">
+   <div id="colores1" class="colorCel1" style="visibility: hidden; background-color: transparent; border-color: transparent;">
      	<!--Aqui se crean imagenes que serviran como botones para hacer en cambio de colores mediante las funciones cargarcolor1()
      	cargarcolor2() y se usa el mismo evento quitarcolor1() para ambos casos
      -->
@@ -124,7 +124,7 @@ $_SESSION["ventana"] = "1";
   <div id="cuadro2-2" style="background-color: white">
   </div>
   <div id="cuadro3-2" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
-   <h1>
+   <h1 id="texto2">
      Arrastre Aqui
    </h1>
    <!--Aqui se crean imagenes que serviran como botones para hacer en cambio de colores mediante las funciones cargarcolor3()
@@ -132,7 +132,7 @@ $_SESSION["ventana"] = "1";
      -->
 
    <img id="imagen-colores2" src="" style="visibility: hidden;">
-   <div class="colorCel2" style="background-color: transparent; border-color: transparent;">
+   <div id="colores2" class="colorCel2" style="visibility: hidden; background-color: transparent; border-color: transparent;">
   		<img src="Imagenes/icono/color1.png" onmouseup="cargarcolor3()" onmouseover="quitarcolor2()" width="42" height="42">
   		<img src="Imagenes/icono/color2.png" onmouseup="cargarcolor4()"  onmouseover="quitarcolor2()" width="42" height="42">
 

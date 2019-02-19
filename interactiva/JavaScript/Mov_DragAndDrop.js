@@ -1,18 +1,20 @@
 contador = 1; // Variable global para tener poder poner un id unico a cada elemento cuando se clona.
+cuadro = "";
+cel = "";
         function start(e) {
             e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
-            e.dataTransfer.setData("Data", e.target.id); // Coje el elemento que se va a mover
+            e.dataTransfer.setData("Data", e.target.id); // Toma el elemento que se va a mover
             e.dataTransfer.setDragImage(e.target, 0, 0); // Define la imagen que se vera al ser arrastrado el elemento y por donde se coje el elemento que se va a mover (el raton aparece en la esquina sup_izq con 0,0)
             e.target.style.opacity = '0.4'; 
         }
 
         function end(e){
             e.target.style.opacity = ''; // Pone la opacidad del elemento a 1           
-            e.dataTransfer.clearData("Data");
+            e.dataTransfer.clearData("Data");//Al finalizar se limpia la imagen
         }
 
         function enter(e) {
-            e.target.style.border = '3px dotted #555'; 
+           // e.target.style.border = '3px dotted #555'; 
         }
 
         function leave(e) {
@@ -32,15 +34,26 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
                 return false; // En el cuadro2 se puede soltar cualquier elemento menos el elemento con id=arrastrable3
             }   
 
-            if (id == 'cuadro3-1')
+            if (id == 'cuadro3-1'){//Espacio celular 1
+                cel="izq";
+                cuadro="cuadro3-1";
                 return false;
+            }
 
-            if (id == 'cuadro3-2')
+            if (id == 'cuadro3-2'){//espacio celular 2 
+                cel="der";
+                cuadro="cuadro3-2";
                 return false;
+            }
 
-            if (id == 'papelera')
+            if (id == 'papelera'){
+
                 return false; // Cualquier elemento se puede soltar en la papelera
-                
+            }
+            if (id == 'pap'){//id de imagen de la papelera
+
+                return false; // Cualquier elemento se puede soltar en la papelera
+            }   
         }
 
     
@@ -54,12 +67,14 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
             var elementoArrastrado = e.dataTransfer.getData("Data"); // Elemento arrastrado
             e.target.appendChild(document.getElementById(elementoArrastrado));
             e.target.style.border = '';  // Quita el borde
+            //Obten el tamaño de la ventana
             tamContX = $('#'+e.target.id).width();
             tamContY = $('#'+e.target.id).height();
 
+            //Obten el tamaño del elemento
             tamElemX = $('#'+elementoArrastrado).width();
             tamElemY = $('#'+elementoArrastrado).height();
-    
+            //Se obtiene la posicion del elemento
             posXCont = $('#'+e.target.id).position().left;
             posYCont = $('#'+e.target.id).position().top;
 
@@ -88,6 +103,27 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
         **/
         function eliminar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
+            //
+            if(cel == "izq"){
+                document.getElementById("cuadro2-1").style.visibility="hidden";
+                document.getElementById("papelera").style.visibility="hidden";
+                document.getElementById("compartir").style.visibility="hidden";
+                document.getElementById("colores1").style.visibility="hidden";
+                document.getElementById("texto1").style.visibility="visible";
+                if (document.getElementById("der")==null) {
+                    document.getElementById("opciones").style.visibility="hidden";
+                }
+            }
+            if (cel == "der") {
+                document.getElementById("cuadro2-2").style.visibility="hidden";
+                document.getElementById("papeleraDer").style.visibility="hidden";
+                document.getElementById("compartirDer").style.visibility="hidden";
+                document.getElementById("colores2").style.visibility="hidden";
+                document.getElementById("texto2").style.visibility="visible";
+                if (document.getElementById("izq")==null) {
+                    document.getElementById("opciones").style.visibility="hidden";
+                }
+            }
             elementoArrastrado.parentNode.removeChild(elementoArrastrado); // Elimina el elemento
             e.target.style.border = '';   // Quita el borde
         }
@@ -100,10 +136,29 @@ contador = 1; // Variable global para tener poder poner un id unico a cada eleme
         function clonar(e){
             var elementoArrastrado = document.getElementById(e.dataTransfer.getData("Data")); // Elemento arrastrado
             elementoArrastrado.style.opacity = ''; // Dejamos la opacidad a su estado anterior para copiar el elemento igual que era antes
-
+            if (document.getElementById(cel) != null) {
+                e.target.removeChild(document.getElementById(cel)); // Se elimina celular
+            }
             var elementoClonado = elementoArrastrado.cloneNode(true); // Se clona el elemento
-            elementoClonado.id = "Cel" + contador; // Se cambia el id porque tiene que ser unico
+            elementoClonado.id = cel; // Se cambia el id porque tiene que ser unico
             contador += 1;  
+            document.getElementById("opciones").style.visibility="visible";
+            if(cuadro == 'cuadro3-1'){
+                document.getElementById("cuadro2-1").style.visibility="visible";
+                document.getElementById("papelera").style.visibility="visible";
+                document.getElementById("compartir").style.visibility="visible";
+                document.getElementById("colores1").style.visibility="visible";
+                document.getElementById("texto1").style.visibility="hidden";
+                document.getElementById('cuadro2-1').style.background='#FBB678 url("Imagenes/informacion/cel1red.png") no-repeat right top';
+            }
+            if (cuadro == 'cuadro3-2'){
+                document.getElementById("cuadro2-2").style.visibility="visible";
+                document.getElementById("papeleraDer").style.visibility="visible";
+                document.getElementById("compartirDer").style.visibility="visible";
+                document.getElementById("texto2").style.visibility="hidden";
+                document.getElementById("colores2").style.visibility="visible";
+                document.getElementById('cuadro2-2').style.background='#FBB678 url("Imagenes/informacion/cel2red.png") no-repeat right top';
+            }
             elementoClonado.style.position = "static";  // Se posiciona de forma "normal" (Sino habria que cambiar las coordenadas de la posición)  
             elementoClonado.style.width = "80%";
             elementoClonado.style.height = "auto";
