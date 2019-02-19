@@ -34,7 +34,6 @@ cel = "";
                 document.getElementById("compDer").style.height="100%";
                 document.getElementById("compDer").style.width = "100%";
             }
-            return false;
         }
 
         function leave(e) {
@@ -58,7 +57,6 @@ cel = "";
                 document.getElementById("compDer").style.height="50%";
                 document.getElementById("compDer").style.width = "50%";
             }
-            return false;
         }
 
         function over(e) {
@@ -95,10 +93,14 @@ cel = "";
 
                 return false; // Cualquier elemento se puede soltar en la papelera
             }
-            if (id == 'pap'){//id de imagen de la papelera
+            if (id == 'papDer'){//id de imagen de la papelera
 
                 return false; // Cualquier elemento se puede soltar en la papelera
-            }   
+            }  
+            if (id == 'papIzq'){//id de imagen de la papelera
+
+                return false; // Cualquier elemento se puede soltar en la papelera
+            } 
         }
 
     
