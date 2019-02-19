@@ -108,7 +108,7 @@ cel = "";
                 document.getElementById("compartir").style.visibility="hidden";
                 document.getElementById("colores1").style.visibility="hidden";
                 document.getElementById("texto1").style.visibility="visible";
-                if (document.getElementById("cuadro2-2").style.visibility == "hidden") {
+                if (document.getElementById("der") != "der") {
                     document.getElementById("opciones").style.visibility="hidden";
                 }
             }
@@ -118,7 +118,7 @@ cel = "";
                 document.getElementById("compartirDer").style.visibility="hidden";
                 document.getElementById("colores2").style.visibility="hidden";
                 document.getElementById("texto2").style.visibility="visible";
-                if (document.getElementById("cuadro2-1").style.visibility == "hidden") {
+                if (document.getElementById("izq") != "izq") {
                     document.getElementById("opciones").style.visibility="hidden";
                 }
             }
