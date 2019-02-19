@@ -5,7 +5,7 @@ cel = "";
             e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
             e.dataTransfer.setData("Data", e.target.id); // Toma el elemento que se va a mover
             e.dataTransfer.setDragImage(e.target, 0, 0); // Define la imagen que se vera al ser arrastrado el elemento y por donde se coje el elemento que se va a mover (el raton aparece en la esquina sup_izq con 0,0)
-            e.target.style.opacity = '0.4'; 
+            //e.target.style.opacity = '0.4'; 
         }
 
         function end(e){
