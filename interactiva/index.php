@@ -77,11 +77,11 @@ $_SESSION["ventana"] = "1";
    </div>
      <div class="col-sm-1">
         <div id="menu">
-      <div id="compartir">
+      <div id="compartirDer">
         <img src="Imagenes/icono/compartir.png" style="height: 65px; width: 65px" />
         Compartir
       </div>
-       <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
+       <div id="papeleraDer" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">
         <img id="pap" src="Imagenes/icono/papelera.png" style="height: 65px; width: 60px" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)"/>
           Papelera
        </div>
