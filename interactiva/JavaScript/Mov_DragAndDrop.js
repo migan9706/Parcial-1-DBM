@@ -241,5 +241,5 @@ cel = "";
                 document.getElementById("compDer").style.height="50%";
                 document.getElementById("compDer").style.width = "50%";
             }
-            window.open("index.php");
+            window.open("index.php?cel="+cel);
         }
